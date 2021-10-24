@@ -1,0 +1,123 @@
+{
+    "AngleEstimator": {
+        "checkpoints": [
+            {
+                "steps": 933,
+                "file_path": "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-933.onnx",
+                "reward": 0.7680988162755966,
+                "creation_time": 1634757400.0919375,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-933.pt"
+                ]
+            },
+            {
+                "steps": 5283,
+                "file_path": "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-5283.onnx",
+                "reward": 0.8718873688152858,
+                "creation_time": 1634757629.8301544,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-5283.pt"
+                ]
+            },
+            {
+                "steps": 334483,
+                "file_path": "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-334483.onnx",
+                "reward": 0.9831754100031969,
+                "creation_time": 1634768745.18741,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-334483.pt"
+                ]
+            },
+            {
+                "steps": 346783,
+                "file_path": "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-346783.onnx",
+                "reward": 0.992299497127533,
+                "creation_time": 1634769233.1348555,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-346783.pt"
+                ]
+            },
+            {
+                "steps": 351366,
+                "file_path": "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-351366.onnx",
+                "reward": 0.7946999402422654,
+                "creation_time": 1634769514.1200826,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-351366.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 351366,
+            "file_path": "results\\cameraAngle3\\AngleEstimator.onnx",
+            "reward": 0.7946999402422654,
+            "creation_time": 1634769514.1200826,
+            "auxillary_file_paths": [
+                "results\\cameraAngle3\\AngleEstimator\\AngleEstimator-351366.pt"
+            ]
+        }
+    },
+    "CameraAngleEstimator": {
+        "checkpoints": [
+            {
+                "steps": 933,
+                "file_path": "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-933.onnx",
+                "reward": 0.7337558418512344,
+                "creation_time": 1634757400.2319381,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-933.pt"
+                ]
+            },
+            {
+                "steps": 5283,
+                "file_path": "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-5283.onnx",
+                "reward": 0.8475643226078579,
+                "creation_time": 1634757629.9931579,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-5283.pt"
+                ]
+            },
+            {
+                "steps": 334483,
+                "file_path": "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-334483.onnx",
+                "reward": 0.9439347517199632,
+                "creation_time": 1634768745.077408,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-334483.pt"
+                ]
+            },
+            {
+                "steps": 346783,
+                "file_path": "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-346783.onnx",
+                "reward": 0.395645680306833,
+                "creation_time": 1634769233.053854,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-346783.pt"
+                ]
+            },
+            {
+                "steps": 351366,
+                "file_path": "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-351366.onnx",
+                "reward": 0.6906443097089466,
+                "creation_time": 1634769514.0360842,
+                "auxillary_file_paths": [
+                    "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-351366.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 351366,
+            "file_path": "results\\cameraAngle3\\CameraAngleEstimator.onnx",
+            "reward": 0.6906443097089466,
+            "creation_time": 1634769514.0360842,
+            "auxillary_file_paths": [
+                "results\\cameraAngle3\\CameraAngleEstimator\\CameraAngleEstimator-351366.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

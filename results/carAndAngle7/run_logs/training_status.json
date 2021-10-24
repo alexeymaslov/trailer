@@ -1,0 +1,47 @@
+{
+    "AngleEstimator": {
+        "checkpoints": [
+            {
+                "steps": 39168,
+                "file_path": "results\\carAndAngle7\\AngleEstimator\\AngleEstimator-39168.onnx",
+                "reward": null,
+                "creation_time": 1634755243.7083547,
+                "auxillary_file_paths": [
+                    "results\\carAndAngle7\\AngleEstimator\\AngleEstimator-39168.pt"
+                ]
+            },
+            {
+                "steps": 80496,
+                "file_path": "results\\carAndAngle7\\AngleEstimator\\AngleEstimator-80496.onnx",
+                "reward": null,
+                "creation_time": 1634755734.403383,
+                "auxillary_file_paths": [
+                    "results\\carAndAngle7\\AngleEstimator\\AngleEstimator-80496.pt"
+                ]
+            },
+            {
+                "steps": 85024,
+                "file_path": "results\\carAndAngle7\\AngleEstimator\\AngleEstimator-85024.onnx",
+                "reward": 0.9987785443663597,
+                "creation_time": 1634755778.925439,
+                "auxillary_file_paths": [
+                    "results\\carAndAngle7\\AngleEstimator\\AngleEstimator-85024.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 85024,
+            "file_path": "results\\carAndAngle7\\AngleEstimator.onnx",
+            "reward": 0.9987785443663597,
+            "creation_time": 1634755778.925439,
+            "auxillary_file_paths": [
+                "results\\carAndAngle7\\AngleEstimator\\AngleEstimator-85024.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

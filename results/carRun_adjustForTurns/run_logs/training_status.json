@@ -1,0 +1,87 @@
+{
+    "CarAgent": {
+        "checkpoints": [
+            {
+                "steps": 499998,
+                "file_path": "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-499998.onnx",
+                "reward": 0.19999997317790985,
+                "creation_time": 1634597213.6854384,
+                "auxillary_file_paths": [
+                    "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-499998.pt"
+                ]
+            },
+            {
+                "steps": 500023,
+                "file_path": "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.onnx",
+                "reward": 0.16666661699612936,
+                "creation_time": 1634597213.734438,
+                "auxillary_file_paths": [
+                    "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.pt"
+                ]
+            },
+            {
+                "steps": 500023,
+                "file_path": "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.onnx",
+                "reward": null,
+                "creation_time": 1634664588.8492517,
+                "auxillary_file_paths": [
+                    "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.pt"
+                ]
+            },
+            {
+                "steps": 500023,
+                "file_path": "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.onnx",
+                "reward": null,
+                "creation_time": 1634664618.379217,
+                "auxillary_file_paths": [
+                    "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.pt"
+                ]
+            },
+            {
+                "steps": 500023,
+                "file_path": "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.onnx",
+                "reward": null,
+                "creation_time": 1634664646.009064,
+                "auxillary_file_paths": [
+                    "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500023,
+            "file_path": "results\\carRun_adjustForTurns\\CarAgent.onnx",
+            "reward": null,
+            "creation_time": 1634664646.009064,
+            "auxillary_file_paths": [
+                "results\\carRun_adjustForTurns\\CarAgent\\CarAgent-500023.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    },
+    "AngleEstimator": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\carRun_adjustForTurns\\AngleEstimator\\AngleEstimator-0.onnx",
+                "reward": null,
+                "creation_time": 1634676240.3432133,
+                "auxillary_file_paths": [
+                    "results\\carRun_adjustForTurns\\AngleEstimator\\AngleEstimator-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results\\carRun_adjustForTurns\\AngleEstimator.onnx",
+            "reward": null,
+            "creation_time": 1634676240.3432133,
+            "auxillary_file_paths": [
+                "results\\carRun_adjustForTurns\\AngleEstimator\\AngleEstimator-0.pt"
+            ]
+        }
+    }
+}

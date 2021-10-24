@@ -1,0 +1,38 @@
+{
+    "AngleEstimator": {
+        "checkpoints": [
+            {
+                "steps": 21328,
+                "file_path": "results\\carAndAngle8\\AngleEstimator\\AngleEstimator-21328.onnx",
+                "reward": 0.9992374268670877,
+                "creation_time": 1634755889.2350025,
+                "auxillary_file_paths": [
+                    "results\\carAndAngle8\\AngleEstimator\\AngleEstimator-21328.pt"
+                ]
+            },
+            {
+                "steps": 23456,
+                "file_path": "results\\carAndAngle8\\AngleEstimator\\AngleEstimator-23456.onnx",
+                "reward": null,
+                "creation_time": 1634755945.1437728,
+                "auxillary_file_paths": [
+                    "results\\carAndAngle8\\AngleEstimator\\AngleEstimator-23456.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 23456,
+            "file_path": "results\\carAndAngle8\\AngleEstimator.onnx",
+            "reward": null,
+            "creation_time": 1634755945.1437728,
+            "auxillary_file_paths": [
+                "results\\carAndAngle8\\AngleEstimator\\AngleEstimator-23456.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
