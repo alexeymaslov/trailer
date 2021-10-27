@@ -53,12 +53,14 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AngleEstimatorAgent.cs" />
-     <Compile Include="Assets\Scripts\CarAgent.cs" />
+     <Compile Include="Assets\Scripts\Cars\DriveAgent.cs" />
      <Compile Include="Assets\Scripts\CameraAngleEstimatorAgent.cs" />
-     <Compile Include="Assets\Scripts\Trailer.cs" />
-     <Compile Include="Assets\Scripts\Car.cs" />
+     <Compile Include="Assets\Scripts\Cars\Trailer.cs" />
      <Compile Include="Assets\Scripts\AngleEstimatorAgent2.cs" />
-     <Compile Include="Assets\Scripts\CameraFollowController.cs" />
+     <Compile Include="Assets\Scripts\Cars\CameraFollowController.cs" />
+     <Compile Include="Assets\Scripts\Cars\Car.cs" />
+     <Compile Include="Assets\Scripts\Cars\CarController.cs" />
+     <Compile Include="Assets\Scripts\Cars\CarAndTrailerController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Apps/Unity Editors/2020.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

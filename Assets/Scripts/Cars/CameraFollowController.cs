@@ -1,8 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+namespace Cars
+{
 public class CameraFollowController : MonoBehaviour
 {
     public Transform objectToFollow;
@@ -31,4 +30,5 @@ public class CameraFollowController : MonoBehaviour
                             objectToFollow.up * offset.y;
         transform.position = Vector3.Lerp(transform.position, targetPos, followSpeed * Time.deltaTime);
     }
+}
 }
