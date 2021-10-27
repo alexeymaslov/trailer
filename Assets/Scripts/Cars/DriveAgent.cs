@@ -63,11 +63,13 @@ public class DriveAgent : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-        var controlSignal = Vector3.zero;
-        controlSignal.x = actions.ContinuousActions[0];
-        controlSignal.z = actions.ContinuousActions[1];
-        car.horizontalInput = controlSignal.x;
-        car.verticalInput = controlSignal.z;
+        var horizontalInput = actions.ContinuousActions[0];
+        horizontalInput = Mathf.Clamp(horizontalInput, -1, 1);
+        var verticalInput = actions.ContinuousActions[1];
+        verticalInput = Mathf.Clamp01(verticalInput);
+        
+        car.horizontalInput = horizontalInput;
+        car.verticalInput = verticalInput;
 
         float distanceToTarget = Vector3.Distance(
             car.transform.localPosition,
