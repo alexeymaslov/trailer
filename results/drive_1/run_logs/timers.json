@@ -1,0 +1,49 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1635371992",
+        "python_version": "3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\Apps\\python3.9.7\\Scripts\\mlagents-learn .\\Assets\\Config\\config.yaml --run-id=drive_1 --resume",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1635372000"
+    },
+    "total": 7.295040299999999,
+    "count": 1,
+    "self": 0.013193600000000139,
+    "children": {
+        "run_training.setup": {
+            "total": 0.1555746,
+            "count": 1,
+            "self": 0.1555746
+        },
+        "TrainerController.start_learning": {
+            "total": 7.1262720999999996,
+            "count": 1,
+            "self": 0.00014070000000021565,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 6.980660599999999,
+                    "count": 1,
+                    "self": 6.980660599999999
+                },
+                "TrainerController._save_models": {
+                    "total": 0.1454708,
+                    "count": 1,
+                    "self": 0.013309700000000646,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.13216109999999937,
+                            "count": 1,
+                            "self": 0.13216109999999937
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
