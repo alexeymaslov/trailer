@@ -19,6 +19,8 @@ public class DriveAgent : Agent
     public Trailer trailer;
 
     private BehaviorParameters behaviorParameters;
+    public Vector3 targetPositionRelativeToCar;
+    public float horizontalInputAccumulator;
 
     private void Start()
     {
@@ -38,6 +40,9 @@ public class DriveAgent : Agent
             0.5f,
             Random.value * trainingAreaZ - trainingAreaZ / 2
         );
+
+        targetPositionRelativeToCar = car.transform.InverseTransformPoint(target.position);
+        horizontalInputAccumulator = 0;
     }
 
     private void Reset()
@@ -71,6 +76,8 @@ public class DriveAgent : Agent
         car.horizontalInput = horizontalInput;
         car.verticalInput = verticalInput;
 
+        horizontalInputAccumulator += horizontalInput;
+
         float distanceToTarget = Vector3.Distance(
             car.transform.localPosition,
             target.localPosition
@@ -78,12 +85,32 @@ public class DriveAgent : Agent
 
         if (distanceToTarget < 1.42f)
         {
-            SetReward(1.0f);
+            AddReward(1.0f);
             EndEpisode();
+            // if (targetPositionRelativeToCar.x < 0 && horizontalInputAccumulator > 0)
+            // {
+            //     SetReward(0.5f);
+            //     EndEpisode();
+            // }
+            // else if (targetPositionRelativeToCar.x > 0 && horizontalInputAccumulator < 0)
+            // {
+            //     SetReward(0.5f);
+            //     EndEpisode();
+            // }
+            // else
+            // {
+            //     SetReward(1.0f);
+            //     EndEpisode();
+            // }
+        }
+        else
+        {
+            AddReward(-0.001f);
         }
 
         if (ShouldReset())
         {
+            AddReward(-1.0f);
             if (behaviorParameters.IsInHeuristicMode() || 
                 behaviorParameters.BehaviorType == BehaviorType.InferenceOnly)
             {
