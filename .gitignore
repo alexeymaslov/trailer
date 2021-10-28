@@ -3,3 +3,9 @@
 /Logs/
 /obj/Debug/
 /Temp/
+ 
+ /.idea/
+ 
+/results/
+
+Assets/ML-Agents/Timers/
