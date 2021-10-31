@@ -1,0 +1,47 @@
+{
+    "Drive": {
+        "checkpoints": [
+            {
+                "steps": 4658,
+                "file_path": "results\\drive_4_penalty_for_wrong_turns\\Drive\\Drive-4658.onnx",
+                "reward": null,
+                "creation_time": 1635374491.1225984,
+                "auxillary_file_paths": [
+                    "results\\drive_4_penalty_for_wrong_turns\\Drive\\Drive-4658.pt"
+                ]
+            },
+            {
+                "steps": 92019,
+                "file_path": "results\\drive_4_penalty_for_wrong_turns\\Drive\\Drive-92019.onnx",
+                "reward": null,
+                "creation_time": 1635374838.653951,
+                "auxillary_file_paths": [
+                    "results\\drive_4_penalty_for_wrong_turns\\Drive\\Drive-92019.pt"
+                ]
+            },
+            {
+                "steps": 97104,
+                "file_path": "results\\drive_4_penalty_for_wrong_turns\\Drive\\Drive-97104.onnx",
+                "reward": null,
+                "creation_time": 1635374902.3393898,
+                "auxillary_file_paths": [
+                    "results\\drive_4_penalty_for_wrong_turns\\Drive\\Drive-97104.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 97104,
+            "file_path": "results\\drive_4_penalty_for_wrong_turns\\Drive.onnx",
+            "reward": null,
+            "creation_time": 1635374902.3393898,
+            "auxillary_file_paths": [
+                "results\\drive_4_penalty_for_wrong_turns\\Drive\\Drive-97104.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

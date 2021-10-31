@@ -39,5 +39,29 @@ public class VisualFindAngleAgent : Agent
             targetPositionRelativeToRotationPointVec2.x
         ) / 180 * -1;
     }
+
+    private static Vector3 AngleToDirection(float angle)
+    {
+        var deg = angle * -1 * 180;
+        var rad = Mathf.Deg2Rad * deg;
+        var x = Mathf.Cos(rad);
+        var z = Mathf.Sin(rad);
+        
+        return new Vector3(x, 0, z).normalized;
+    }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        var predictedTargetPosition = rotationPoint.TransformPoint(AngleToDirection(predicted));
+        Gizmos.DrawSphere(predictedTargetPosition, 0.05f);
+        var rotationPointPosition = rotationPoint.position;
+        GizmosExtensions.DrawWireArcBetweenPredictedAndExpectedDir(
+            rotationPointPosition, 
+            (target.position - rotationPointPosition).normalized,
+            (predictedTargetPosition - rotationPointPosition).normalized,
+            0.6f
+            );
+    }
 }
 }

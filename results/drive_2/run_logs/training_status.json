@@ -1,0 +1,29 @@
+{
+    "Drive": {
+        "checkpoints": [
+            {
+                "steps": 39619,
+                "file_path": "results\\drive_2\\Drive\\Drive-39619.onnx",
+                "reward": null,
+                "creation_time": 1635372183.788287,
+                "auxillary_file_paths": [
+                    "results\\drive_2\\Drive\\Drive-39619.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 39619,
+            "file_path": "results\\drive_2\\Drive.onnx",
+            "reward": null,
+            "creation_time": 1635372183.788287,
+            "auxillary_file_paths": [
+                "results\\drive_2\\Drive\\Drive-39619.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
