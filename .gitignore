@@ -1,9 +1,14 @@
 ﻿/.idea/
-/Library/
-/Logs/
-/obj/Debug/
-/Temp/
+
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
  
- /.idea/
+*.csproj 
+*.sln
 
 Assets/ML-Agents/Timers/
