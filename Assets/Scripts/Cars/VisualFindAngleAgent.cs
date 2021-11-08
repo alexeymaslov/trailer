@@ -1,6 +1,7 @@
 using System;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
+using Unity.MLAgents.Sensors;
 using UnityEngine;
 
 namespace Cars
@@ -12,13 +13,19 @@ public class VisualFindAngleAgent : Agent
 
     public float expected;
     public float predicted;
-    
+    public float observed;
+
+    public override void CollectObservations(VectorSensor sensor)
+    {
+        observed = CalculateAngle(rotationPoint, target);
+    }
+
     public override void OnActionReceived(ActionBuffers actions)
     {
         expected = CalculateAngle(rotationPoint, target);
         predicted = actions.ContinuousActions[0];
 
-        AddReward(Mathf.Pow(1 - Mathf.Abs(expected - predicted), 40));
+        AddReward(Mathf.Pow(1 - Mathf.Abs(expected - predicted), 80));
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -52,16 +59,16 @@ public class VisualFindAngleAgent : Agent
     
     private void OnDrawGizmos()
     {
-        // Gizmos.color = Color.blue;
+        Gizmos.color = Color.blue;
         var predictedTargetPosition = rotationPoint.TransformPoint(AngleToDirection(predicted));
-        // Gizmos.DrawSphere(predictedTargetPosition, 0.05f);
+        var expectedTargetPosition = rotationPoint.TransformPoint(AngleToDirection(expected));
+        Gizmos.DrawSphere(predictedTargetPosition, 0.05f);
         var rotationPointPosition = rotationPoint.position;
         GizmosExtensions.DrawWireArcBetweenPredictedAndExpectedDir(
             rotationPointPosition, 
-            (target.position - rotationPointPosition).normalized,
+            (expectedTargetPosition - rotationPointPosition).normalized,
             (predictedTargetPosition - rotationPointPosition).normalized,
-            0.6f,
-            maxSteps: 0
+            0.6f
             );
     }
 }
