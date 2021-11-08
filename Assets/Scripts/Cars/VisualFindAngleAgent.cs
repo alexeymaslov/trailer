@@ -52,15 +52,16 @@ public class VisualFindAngleAgent : Agent
     
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.blue;
+        // Gizmos.color = Color.blue;
         var predictedTargetPosition = rotationPoint.TransformPoint(AngleToDirection(predicted));
-        Gizmos.DrawSphere(predictedTargetPosition, 0.05f);
+        // Gizmos.DrawSphere(predictedTargetPosition, 0.05f);
         var rotationPointPosition = rotationPoint.position;
         GizmosExtensions.DrawWireArcBetweenPredictedAndExpectedDir(
             rotationPointPosition, 
             (target.position - rotationPointPosition).normalized,
             (predictedTargetPosition - rotationPointPosition).normalized,
-            0.6f
+            0.6f,
+            maxSteps: 0
             );
     }
 }
