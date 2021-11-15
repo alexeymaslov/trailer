@@ -1,0 +1,65 @@
+{
+    "VisualFindAngle": {
+        "checkpoints": [
+            {
+                "steps": 2203888,
+                "file_path": "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2203888.onnx",
+                "reward": null,
+                "creation_time": 1636721884.0576375,
+                "auxillary_file_paths": [
+                    "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2203888.pt"
+                ]
+            },
+            {
+                "steps": 2335744,
+                "file_path": "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2335744.onnx",
+                "reward": 2773.981166869402,
+                "creation_time": 1636730224.5592568,
+                "auxillary_file_paths": [
+                    "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2335744.pt"
+                ]
+            },
+            {
+                "steps": 2467792,
+                "file_path": "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2467792.onnx",
+                "reward": 2961.317480802536,
+                "creation_time": 1636743899.2156937,
+                "auxillary_file_paths": [
+                    "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2467792.pt"
+                ]
+            },
+            {
+                "steps": 2499968,
+                "file_path": "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2499968.onnx",
+                "reward": null,
+                "creation_time": 1636756350.3539996,
+                "auxillary_file_paths": [
+                    "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2499968.pt"
+                ]
+            },
+            {
+                "steps": 2825160,
+                "file_path": "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2825160.onnx",
+                "reward": null,
+                "creation_time": 1636772332.7136261,
+                "auxillary_file_paths": [
+                    "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2825160.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2825160,
+            "file_path": "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle.onnx",
+            "reward": null,
+            "creation_time": 1636772332.7136261,
+            "auxillary_file_paths": [
+                "results\\VisualFindAngle_YRotator_252x168_pow80\\VisualFindAngle\\VisualFindAngle-2825160.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

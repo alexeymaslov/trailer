@@ -1,0 +1,38 @@
+{
+    "VisualFindAngle": {
+        "checkpoints": [
+            {
+                "steps": 704,
+                "file_path": "results\\VisualFindAngleYRotator168\\VisualFindAngle\\VisualFindAngle-704.onnx",
+                "reward": null,
+                "creation_time": 1636378968.4787595,
+                "auxillary_file_paths": [
+                    "results\\VisualFindAngleYRotator168\\VisualFindAngle\\VisualFindAngle-704.pt"
+                ]
+            },
+            {
+                "steps": 215632,
+                "file_path": "results\\VisualFindAngleYRotator168\\VisualFindAngle\\VisualFindAngle-215632.onnx",
+                "reward": null,
+                "creation_time": 1636387706.2431238,
+                "auxillary_file_paths": [
+                    "results\\VisualFindAngleYRotator168\\VisualFindAngle\\VisualFindAngle-215632.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 215632,
+            "file_path": "results\\VisualFindAngleYRotator168\\VisualFindAngle.onnx",
+            "reward": null,
+            "creation_time": 1636387706.2431238,
+            "auxillary_file_paths": [
+                "results\\VisualFindAngleYRotator168\\VisualFindAngle\\VisualFindAngle-215632.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
