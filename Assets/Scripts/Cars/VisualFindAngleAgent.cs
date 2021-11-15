@@ -62,7 +62,7 @@ public class VisualFindAngleAgent : Agent
         Gizmos.color = Color.blue;
         var predictedTargetPosition = rotationPoint.TransformPoint(AngleToDirection(predicted));
         var expectedTargetPosition = rotationPoint.TransformPoint(AngleToDirection(expected));
-        Gizmos.DrawSphere(predictedTargetPosition, 0.05f);
+            //Gizmos.DrawSphere(predictedTargetPosition, 0.05f);
         var rotationPointPosition = rotationPoint.position;
         GizmosExtensions.DrawWireArcBetweenPredictedAndExpectedDir(
             rotationPointPosition, 

@@ -58,9 +58,9 @@ public static class GizmosExtensions
 
         Gizmos.color = expectedColor.Value;
         var expectedDirAngle = MapDegreeTo0360(GetAnglesFromDir(position, expectedDir));
-        Debug.Log($"expectedDirAngle={expectedDirAngle}");
+        // Debug.Log($"expectedDirAngle={expectedDirAngle}");
         var predictedDirAngle = MapDegreeTo0360(GetAnglesFromDir(position, predictedDir));
-        Debug.Log($"predictedDirAngle={predictedDirAngle}");
+        // Debug.Log($"predictedDirAngle={predictedDirAngle}");
 
         var expectedDirPosition = position + 
                           new Vector3(
